@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 15px;
+
+    font-family: "Calculator", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: #ffb7c5;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Aligns items horizontally */
+    align-items: center;
+}
+
+#Calculator {
+    background-color: #fcd1d7;
+    width: 380px;
+    margin: 50px auto;
+    padding: 30px 20px 20px;
+
+    border: 1px solid #e9b1cd;
+    border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.171);
+    transition: all 0.4s ease;
+}
+
+.merk {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6b87;
+}
+
+.display {
+    background-color: rgba(24, 255, 24, 0.205);
+    text-align: right;
+    align-items: center;
+    padding: 20px 20px 5px;
+    margin-bottom: 50px;
+
+    border: 1px solid #e9b1cd;
+    border-radius: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display-hist {
+    min-height: 30px;
+    font-size: 20px;
+}
+
+.display-operator {
+    min-height: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.display-input {
+    min-height: 50px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn-num-operator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.flex-1 {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.button-17 {
+    font-family: "Calculator", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    flex: 1;
+    width: 100%;
+    height: 40px;
+}
+
+.operator {
+    background-color: lightskyblue;
+}
+
+@media (max-width: 550px) {
+    main > div {
+        padding: 10px 10px;
+        height: auto;
+    }
+    #Calculator {
+        width: auto;
+        margin: 0;
+    }
+
+    .button-17 {
+        flex: 1;
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+    }
+}
